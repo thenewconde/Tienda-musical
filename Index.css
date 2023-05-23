@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+h1{
+    text-align: center;
+    color: brown;
+    box-shadow: 0 0 5px 5px rgba(165, 42, 42, 0.65);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-top: 1%;
+}
+
+img{
+    width: 100px;
+    float: left;
+    height: 100px;
+    margin: 2%;
+    border-radius: 5px;
+
+}
+label{
+    margin: 1%;
+    font-weight: bold;
+}
+input{
+    width: 100px;
+    height: 30px;
+    background-color: antiquewhite;
+    margin: 1%;
+}
+
+.main-menu{
+    background-color: brown;
+    display: inline;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+li{
+    display: inline;
+    margin-left: 50px;
+}
+/* 
+.main-menu li:active{
+    border: 2px solid white;
+    color: blue;
+} */
+.main-menu li:hover{
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* .sec-menu{
+    position: relative;
+    background-color: green;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: 2%;
+    cursor: pointer;
+} */
+
+nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.menu li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  ul.menu li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    padding: 10px;
+  }
+  
+  ul.submenu li {
+    display: block;
+  }
+  
+  ul.menu li:hover > ul.submenu {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+/*Aqui empiez el section*/
+main{
+    width: 100%;
+    display: inline-block;
+}
+.inst{
+    width: 30%;
+    height: 250px;
+    display: inline-block;
+    background-color: aqua;
+    padding: 10px;
+    margin-left: 5px;
+    top: 0;
+    vertical-align: top; /*Con esta podemos poner todo pegado al (top) donde sea*/
+}
+
+.inst:nth-child(2){
+    background-color: tomato;
+
+}
+
+.inst:nth-child(3){
+    background-color: orange;
+}
+.story h1{
+    margin-top: 30px;
+}
+.story p{
+    width: 30%;
+    height: 250px;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    vertical-align: top; /*Con esta podemos poner todo pegado al (top) donde sea*/
+}
+
+.story p:nth-child(even){
+    background-color: tomato;
+
+}
+
+.story p:nth-child(odd){
+    background-color: orange;
+}
+
+footer{
+    background-color: aquamarine;
+    text-align: center;
+    box-shadow: 0 0 5px 5px brown;
+}
