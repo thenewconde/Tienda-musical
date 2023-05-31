@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Index.css">
+    <style>
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: inst 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+    left: 0;
+	list-style: none;
+}
+
+.slider img {
+	width: auto;
+}
+
+/* @keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -400%;}
+	100% {margin-left: -400%;}
+} */
+
+@keyframes inst {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+	
+	
+}
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="slider">
+        <ul>
+				<div class="inst">
+					<p>
+					Conozca nuestras sucursales en todo el pais y con gusto te atenderemos
+				</p>
+				<img src="./IMG/tienda-pasillo.jpg" alt="" class="img-inst">
+				</div>
+				<div class="inst">
+					<p>
+						Nuestra tienda de música se enorgullece de ofrecer una amplia colección de guitarras de alta calidad para músicos de todos los niveles. Desde guitarras acústicas hasta eléctricas, nuestra colección cuenta con una variedad de modelos y marcas para satisfacer las necesidades y gustos de cada cliente.
+				</p>
+			<img src="./IMG/guitarras.jpg" alt="" class="img-inst">
+			</div>
+		
+				<div class="inst">
+					<p>
+						En nuestra tienda de música, también ofrecemos una amplia variedad de instrumentos de percusión para músicos de todos los niveles. Desde tambores y platillos hasta maracas y bongos, nuestra colección cuenta con una gran variedad de instrumentos para satisfacer las necesidades y gustos de cualquier cliente.
+				</p>
+				<img src="./IMG/percusion.jpg" alt="" class="img-inst">
+			</div>
+
+				<div class="inst">
+					<p>
+						En nuestra tienda de música, también ofrecemos una amplia variedad de instrumentos de percusión para músicos de todos los niveles. Desde tambores y platillos hasta maracas y bongos, nuestra colección cuenta con una gran variedad de instrumentos para satisfacer las necesidades y gustos de cualquier cliente.
+				</p>
+				<img src="./IMG/percusion.jpg" alt="" class="img-inst">
+			</div>
+			</ul>
+        </div>
+
+    </main>    
+
+
+
+
+
+</body>
+</html>
