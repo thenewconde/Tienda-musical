@@ -4,12 +4,30 @@
     width: auto;
 }
 body{
-    width: 97%;
+    width: 95%;
     margin: 0 auto;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgb(255, 81, 0);
+    font-family: cursive;
 }
+
+/*Aqui empieza el header-menu*/
 .menu-tienda{
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: relative;
+}
+
+.head-menu{
+    width: 25%;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+}
+.head-menu:nth-child(3){
+    right: 0;
+    margin-left: 15%;
 }
 
 
@@ -17,21 +35,31 @@ h1{
     text-align: center;
     color: brown;
     box-shadow: 0 0 5px 5px rgba(165, 42, 42, 0.65);
-    width: 40%;
-    margin:1% 30%;
+    width: 150%;
+    height: 10%;
+    margin-bottom: 10%;
+    vertical-align: top;
+}
+h1:hover{
+    transform: scale(1.2);
+    background-color: brown;
+    color: black;
+    width: 150%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid yellow;
+    white-space: wrap;
 }
 
+
 .img-menu{
-    width: 10%;
+    width: 50%;
     margin-left: 5%;
-    vertical-align: top;
     
 }
 label{
     font-weight: bold;
+    width: 100%;
     height: auto;
-    float: right;
-    right: 0;
     
 }
 input{
@@ -43,7 +71,7 @@ input{
 }
 
 .main-menu{
-    background-color: rgba(0, 170, 255, 0.615);
+    background-color: rgba(39, 41, 48, 0.615);
     display: inline-block;
     font-size: 30px;
     width: 100%;
@@ -52,6 +80,7 @@ input{
 }
 .main-menu li a{
     text-decoration: none;
+    color: black;
 }
 .main-menu li a:hover{
     color: white;
@@ -66,13 +95,43 @@ input{
     border: 2px solid white;
     color: blue;
 } */
+.fig-mov-2{
+    width: 100%;
+    height: 300px;
+}
 
+/*Movimiento de figura img
+.fig-mov{
+    width: 85%;
+    height: auto;
+}
+.fig-mov img{
+    display: flex;
+    padding: 0;
+    width:15%;
+    animation: mover 5s infinite alternate linear;
+}
+
+@keyframes mover{
+    0%{margin-left: 0;}
+    100%{margin-left: 100%;}
+
+}*/
+
+
+
+
+
+
+
+
+/*Comienza menu responsive*/
 .menu-inline{
     width: 100%;
     height: 100%;
     right: 0;
     display: inline-block;
-    background-color: rgb(0, 170, 255);
+    background-color: rgba(41, 109, 158, 0.56);
     border: 1px solid gray;
     text-align: center;
     margin: 5px 0;
@@ -118,7 +177,7 @@ ul.sub{
 
 ul.menu-2 li:hover > ul.sub{
     display: block;
-    background-color: gold;
+    background-color: rgb(68, 60, 14);
     text-decoration: none;
     color: white;
 }
@@ -147,8 +206,12 @@ ul.menu-2 li:hover > ul.sub li a{
 
 
 
+
+
+
+
 /*Aqui empiez el section*/
-main{
+.main-banner{
     width: 100%;
     display: inline-block;
 }
@@ -171,62 +234,120 @@ main{
     top: 0;
     border: 1px solid gray;
     margin-bottom: 1%;
-    box-shadow: 0 0 2px 2px purple;
+    box-shadow: 0 0 3px 3px rgb(87, 128, 0);
     vertical-align: top; /*Con esta podemos poner todo pegado al (top) donde sea*/
 }
 
 
 .inst:nth-child(2), .inst:nth-child(4), .inst:nth-child(6){
-    background-color: orange;
+    background-color: rgba(0, 255, 132, 0.19);
 }
 .inst:nth-child(1), .inst:nth-child(3), .inst:nth-child(5){
-    background-color: rgb(0, 170, 255);
+    background-color: rgba(255, 213, 0, 0.12);
 
 }
 
 .banner-section{
     display: inline-block;
     vertical-align: top;
+    width: auto;
 }
 
 iframe{
     width: 450px;
     height: 400px;
-    margin: 0;
     float: left;
     padding: 0;
 }
 
-iframe:nth-child(2){
-    float: right;
-    margin-left: 50%;
-
+.story{
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
-.story h1{
-    margin-top: 30px;
-}
-.story p{
+#historia{
+        background-color: brown;
+        color: red;
+        width: 97%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: 2px solid yellow;
+        white-space: wrap;
+        padding: 10px;
+        transition: 1s;
+        margin: 1% auto;
+    }
+#historia:hover{
+        transform: scale(1.2);
+        background-color: brown;
+        color: black;
+        width: 50%;
+        text-align: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: 2px solid yellow;
+        white-space: wrap;
+        margin-left: 20%;
+    }
+
+
+/* .story p{
     width: 30%;
-    height: 250px;
+    height: 350px;
     display: inline-block;
     padding: 10px;
     margin-left: 5px;
     margin-bottom: 10px;
     vertical-align: top; /*Con esta podemos poner todo pegado al (top) donde sea*/
-}
 
-.story p:nth-child(even){
-    background-color: tomato;
-
-}
-
-.story p:nth-child(odd){
-    background-color: orange;
-}
 
 footer{
     background-color: aquamarine;
     text-align: center;
     box-shadow: 0 0 5px 5px brown;
 }
+.main-down{
+}
+
+
+.container {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    perspective: 1000px;
+    position: relative;
+    background-color: brown;
+    margin-left: 2%;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    
+  }
+  
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  .container:hover .card {
+    transform: rotateY(180deg);
+  }
+  

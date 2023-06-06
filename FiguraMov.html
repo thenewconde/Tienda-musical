@@ -1,0 +1,193 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas height="400" width="400"></canvas>
+    <script>
+
+var pantalla = document.querySelector("canvas");
+var escribir = pantalla.getContext("2d");
+
+escribir.fillStyle="blue";
+escribir.fillRect(0,0,400,400);
+var x=50;
+var y=20;
+
+function limpiarPantalla(){
+    escribir.clearRect(0,0,400,400);
+}
+
+function mostrarImagen() {
+  // Crea un elemento de imagen
+  var imagen = document.createElement('img');
+
+  // Asigna la ruta de la imagen al atributo src
+  imagen.src = 'D:\Programacion\Codigo\Curso One  Alura G5\JS\Labs\logo-musica.jpg';
+
+  // Agrega la imagen al DOM
+  document.body.appendChild(imagen);
+}
+
+// Llama a la función para mostrar la imagen
+
+
+function figura(x,y,radio){
+    escribir.fillStyle="red";
+    escribir.beginPath();
+    escribir.arc(x,y,radio,0, 2*Math.PI);
+    escribir.fill();
+}
+
+function movimientoFigura(){
+    var x=0;
+    var sentido = 1;
+        function actualizarPantalla(){
+            limpiarPantalla();
+            if(x>400){
+                sentido = -1;
+            } else if(x<0){
+                sentido = 1;
+            }
+            mostrarImagen();
+            x=sentido;
+        }
+        setInterval(actualizarPantalla,5);
+}
+
+movimientoFigura();
+
+
+    </script>
+    
+</body>
+</html> -->
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="pantalla" height="400" width="400"></canvas>
+    <script>
+        var pantalla = document.getElementById("pantalla");
+        var ctx = pantalla.getContext("2d");
+        var x = 0;
+
+        function limpiarPantalla(){
+            ctx.clearRect(0, 0, pantalla.width, pantalla.height);
+        }
+
+        function mostrarImagen() {
+            var imagen = new Image();
+            imagen.src = "logo-musica.jpg";
+            imagen.onload = function() {
+                ctx.drawImage(imagen, x, 10, 100, 100);
+            };
+        }
+
+        function figura(x, y, radio){
+            ctx.fillStyle = "red";
+            ctx.beginPath();
+            ctx.arc(x, y, radio, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+
+        function movimientoFigura() {
+            var y = 20;
+            var radio = 20;
+            var sentido = 1;
+
+            mostrarImagen();
+            figura(x, y, radio);
+
+            function actualizarPantalla() {
+                limpiarPantalla();
+
+                if (x > pantalla.width) {
+                    sentido = -1;
+                } else if (x < 0) {
+                    sentido = 1;
+                }
+
+                x += sentido; // Actualizar la posición horizontal de la figura
+
+                mostrarImagen();
+          /*       figura(x, y, radio); */
+            }
+
+            setInterval(actualizarPantalla, 5);
+        }
+
+        movimientoFigura();
+    </script> -->
+
+
+<div>
+    <canvas id="pantalla" height="100%" width="930%"></canvas>
+<script>
+    var pantalla = document.getElementById("pantalla");
+    var ctx = pantalla.getContext("2d");
+    var x = 20;
+
+    function limpiarPantalla() {
+        ctx.clearRect(0, 0, pantalla.width, pantalla.height);
+    }
+
+     function mostrarImagen() {
+        var imagen = new Image();
+        imagen.src = "./IMG/logo-musica.jpg";
+        imagen.onload = function() {
+            ctx.drawImage(imagen, x, 10, 100, 100);
+        };
+    } 
+
+    function figura(x, y, radio) {
+        ctx.fillStyle = "red";
+        ctx.beginPath();
+        ctx.arc(x, y, radio, 0, 2 * Math.PI);
+        ctx.fill();
+    }
+
+    function movimientoFigura() {
+        var y = 20;
+        var radio = 20;
+        var sentido = 1;
+
+         mostrarImagen(); 
+        figura(100, y, radio);
+
+        function actualizarPantalla() {
+            limpiarPantalla();
+
+            if (x > pantalla.width) {
+                sentido = -1;
+            } else if (x < 0) {
+                sentido = 1;
+            }
+
+            x += sentido; // Actualizar la posición horizontal de la figura
+
+             mostrarImagen();
+            figura(x, y, radio);
+        }
+
+        setInterval(actualizarPantalla, 5);
+    }
+
+    movimientoFigura();
+</script>
+</body>
+</html>

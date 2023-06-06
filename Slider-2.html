@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Index.css">
+    <style>
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: inst 25s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+    left: 0;
+	list-style: none;
+}
+
+.slider img {
+	width: 300px;
+	height: 200px;
+}
+
+/* @keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -400%;}
+	100% {margin-left: -400%;}
+} */
+
+@keyframes inst {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+	
+	
+}
+
+    </style>
+</head>
+
+
+<!-- Slider Para el menu de 4 diapositivas o contenedores, llega texto(p) y una imagen -->
+
+
+
+<body>
+
+    <main>
+        <div class="slider">
+        <ul>
+			<div class="inst">
+
+				<p>Cada batería en nuestra colección ha sido seleccionada por expertos en música para garantizar que ofrezca una calidad de sonido excepcional y una construcción duradera. Trabajamos con algunas de las marcas más reconocidas en el mundo de la música, como Pearl, Ludwig y Tama, para ofrecer una selección de baterías que se adapten a cualquier estilo y presupuesto.</p>
+				<img src="./IMG/perc.jpg" alt="" class="img-inst">
+					
+			</div>
+			
+			<div class="inst">
+				   <p> Desde flautas y clarinetes hasta trompetas y saxofones, nuestra colección cuenta con una gran variedad de instrumentos para satisfacer las necesidades y gustos de cualquier cliente.
+		
+				</p>
+			<img src="./IMG/viento.jpg" alt="" class="img-inst">
+			</div>
+		
+				<div class="inst">
+					<p>En nuestra tienda de música, también ofrecemos una amplia variedad de violines para músicos de todos los niveles. Desde violines para principiantes hasta violines profesionales de alta gama, nuestra colección cuenta con una gran variedad de modelos para satisfacer las necesidades y gustos de cualquier cliente.</p>
+				<img src="./IMG/viole.jpg" alt="" class="img-inst">
+			</div>
+
+				<div class="inst">
+					<p>En nuestra tienda de música, también ofrecemos una amplia variedad de violines para músicos de todos los niveles. Desde violines para principiantes hasta violines profesionales de alta gama, nuestra colección cuenta con una gran variedad de modelos para satisfacer las necesidades y gustos de cualquier cliente.</p>
+				<img src="./IMG/viole.jpg" alt="" class="img-inst">
+			</div>
+			</ul>
+        </div>
+
+    </main>    
+
+
+
+
+
+</body>
+</html>

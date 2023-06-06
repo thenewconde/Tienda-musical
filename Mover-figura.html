@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mover Figura</title>
+
+    <style>
+
+.contenedor{
+    width: 98%;
+    height: 200px;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+
+/*Eliminado porque interrumpe en la config manual*/
+/* figure{
+    width: 100%;
+    height: 200px;
+} */
+figure img{
+    display: flex;
+    padding: 0;
+    width:80%;
+    animation: mover 1s infinite alternate linear;
+}
+img{
+    width: auto;
+    height: 100%;
+} 
+
+@keyframes mover{
+    0%{margin-left: 0%;}
+    100%{margin-left: 60%;}
+
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="contenedor">
+    <figure>
+        <img class="mover" src="./IMG/logo-musica.jpg" alt="">
+    </figure>
+    <figure>
+        <img class="mover" src="./IMG/banda.jpg" alt="">
+    </figure>
+    <figure>
+        <img class="mover" src="./IMG/musicos.jpg" alt="">
+    </figure>
+    <figure>
+        <img class="mover" src="./IMG/descarga.png" alt="">
+    </figure>
+</div>
+
+
+
+
+    
+<!--     <div>
+       <p> Esta imagen deberia moverse hasta el final. El total de width es de 600px</p>
+    </div>
+
+    <figure>
+        <img class="mover" src="./logo-musica.jpg" alt="">
+    </figure> -->
+
+</body>
+</html>
